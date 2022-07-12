@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <input
+        id="comment"
+        type="text"
+        name="fname"
+        placeholder="Typesomthing"
+      /><br />
+      <label> Hello everyone </label>
+
+      <button onclick="replyReturn()">Submit</button>
+      <p id="text"></p>
+    </form>
+
+    <script>
+      function replyReturn() {
+        const reply = document.getElementById("comment").value;
+        document.getElementById("text").innerText = reply;
+        const button = document.createElement("button");
+        button.innerHTML = "Do Something";
+      }
+    </script>
+  </body>
+</html>
