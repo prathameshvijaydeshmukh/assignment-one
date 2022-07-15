@@ -17,17 +17,33 @@
       /><br />
       <label> Hello everyone </label>
 
-      <button onclick="replyReturn()">Submit</button>
+      <button id="btn-submit" onclick="replyReturn()">Submit</button>
       <p id="text"></p>
+      <!-- <button id="btn-replay">Replay</button> -->
+      <!-- <button>Replay</button> -->
     </form>
 
     <script>
       function replyReturn() {
         const reply = document.getElementById("comment").value;
         document.getElementById("text").innerText = reply;
-        const button = document.createElement("button");
-        button.innerHTML = "Do Something";
+        // document.getElementById("btn-submit").innerHTML = reply;
+        // document.getElementsById("btn-submit", "Reply").innerText = reply;
+        // const newtext = document.createElement("btn-submit").value;
+
+        // const reply = document.getElementById("comment").value;
+
+        // var newElement = document.createElement("Div").value;
+        // console.log(createElement);
+        // document.getElementById("text").innerText = reply;
+        //
+
+        // const replybtn = document.getElementById("btn-submit").value;
+        // document.getElementById("btn-submit").innerHTML = replybtn;
+        // const button = document.createElement("button");
+        // button.innerHTML = "Do Something";
       }
     </script>
+    <script src="dom.js"></script>
   </body>
 </html>
